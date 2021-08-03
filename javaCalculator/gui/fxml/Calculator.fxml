@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="259.0" styleClass="pane" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculatorController">
+   <children>
+      <AnchorPane layoutY="81.0" prefHeight="200.0" prefWidth="259.0">
+         <children>
+            <Button fx:id="btnOne" focusTraversable="false" layoutX="16.0" layoutY="109.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="1" />
+            <Button fx:id="btnTwo" focusTraversable="false" layoutX="64.0" layoutY="109.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="2" />
+            <Button fx:id="btnThree" focusTraversable="false" layoutX="111.0" layoutY="109.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="3" />
+            <Button fx:id="btnFour" focusTraversable="false" layoutX="16.0" layoutY="67.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="4" />
+            <Button fx:id="btnFive" focusTraversable="false" layoutX="64.0" layoutY="67.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="5" />
+            <Button fx:id="btnSix" focusTraversable="false" layoutX="111.0" layoutY="67.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="6" />
+            <Button fx:id="btnSeven" focusTraversable="false" layoutX="16.0" layoutY="25.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="7" />
+            <Button fx:id="btnEight" focusTraversable="false" layoutX="64.0" layoutY="25.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="8" />
+            <Button fx:id="btnNine" focusTraversable="false" layoutX="111.0" layoutY="25.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" styleClass="num-btn" text="9" />
+            <Button fx:id="btnMinus" focusTraversable="false" layoutX="167.0" layoutY="109.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#decrease" styleClass="action-btn" text="-" />
+            <Button fx:id="btnMultiply" focusTraversable="false" layoutX="167.0" layoutY="67.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#multiply" styleClass="action-btn" text="*" />
+            <Button fx:id="btnDivide" focusTraversable="false" layoutX="167.0" layoutY="25.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#divide" styleClass="action-btn" text="/" />
+            <Button fx:id="btnEquals" focusTraversable="false" layoutX="210.0" layoutY="109.0" maxHeight="77.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#calculate" prefHeight="77.0" prefWidth="35.0" styleClass="action-btn" text="=" />
+            <Button fx:id="btnReverse" focusTraversable="false" layoutX="112.0" layoutY="151.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" styleClass="action-btn" text="+/-" />
+            <Button fx:id="btnZero" focusTraversable="false" layoutX="16.0" layoutY="151.0" maxHeight="35.0" maxWidth="82.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#numberPanel" prefHeight="35.0" prefWidth="82.0" styleClass="num-btn" text="0" />
+            <Button fx:id="btnPlus" focusTraversable="false" layoutX="167.0" layoutY="151.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#add" styleClass="action-btn" text="+" />
+            <Button fx:id="btnCe" focusTraversable="false" layoutX="210.0" layoutY="67.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#multiply" prefHeight="35.0" prefWidth="35.0" styleClass="action-btn" text="CE" />
+            <Button fx:id="btnC" focusTraversable="false" layoutX="210.0" layoutY="25.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#clear" styleClass="action-btn" text="C" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtAreaResult" editable="false" focusTraversable="false" layoutX="8.0" layoutY="38.0" prefHeight="55.0" prefWidth="243.0">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font></TextField>
+      <Label layoutX="83.0" prefHeight="35.0" prefWidth="94.0" text="Calculator">
+         <font>
+            <Font name="Agency FB Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

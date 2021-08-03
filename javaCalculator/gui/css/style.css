@@ -1,0 +1,32 @@
+.pane {
+    -fx-background-color: black;
+}
+
+.button {
+    -fx-background-radius: 50px;
+    -fx-font-size: 9pt;
+}
+
+.num-btn {
+    -fx-background-color: rgb(116, 116, 116);
+    -fx-text-fill: white;
+}
+
+.num-btn:hover, .button:focused{
+    -fx-background-color: rgb(78, 77, 77);
+    -fx-text-fill: white;
+}
+
+.action-btn {
+    -fx-background-color: rgb(230, 158, 65);
+    -fx-text-fill: white;
+}
+
+.action-btn:hover, .button:focused{
+    -fx-background-color: rgb(160, 102, 25);
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-text-fill: white;
+}
